@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_app" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cn_view_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_settings_prayer"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/ig_date_down"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_date_adjust"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_700"
+                            android:text="@string/hiji_date"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_date_get"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="@string/None"
+                            android:textColor="#99D5FF"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ig_date_down"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_setting_prayer_down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:background="#8793A6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_date_two_ago"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_two_day_ago"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/two_day"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_two_day_ago"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_date_one_ago"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_one_day_ago"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/one_day"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_one_day_ago"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_date_none"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_none_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/None"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_none_day"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_date_one_ahead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_one_day_ahead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/one_day_ahead"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_one_day_ahead"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_date_two_ahead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_two_day_ahead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/two_day_ahead"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_two_day_ahead"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cn_view_select_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_settings_prayer"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_header_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/ig_drop_down_method"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_700"
+                            android:text="@string/select_calculation"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_medthod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="Muslim World League"
+                            android:textColor="#99D5FF"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ig_drop_down_method"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_setting_prayer_down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/rlMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rl_header_method">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:background="#8793A6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_medthod1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_method_show1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/method1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_method1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_medthod2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_method_show2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/method2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_method2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_method3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_method_show3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/method3"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_method3"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_method4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_method_show4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/method4"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_method4"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_method5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_method_show5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/method5"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_method5"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_method6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_method_show6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/method6"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_method6"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_method7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_method_show7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/method7"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_method7"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_view_calculation_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/bg_settings_prayer"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_header_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/ig_drop_time"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_700"
+                            android:text="@string/caculation"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_calculation_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="@string/Shafi"
+                            android:textColor="#99D5FF"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ig_drop_time"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_setting_prayer_down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_calculation_time_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rl_header_method">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:background="#8793A6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_time1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_time_show1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/Shafi"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_asr_time1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_time2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_time_show2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/Hanafi"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_asr_time2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_format_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:background="@drawable/bg_settings_prayer"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_15sdp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_header_format_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/ig_drop_format_time"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/lato_700"
+                            android:text="@string/format_time"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_format_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="@string/_24_hour"
+                            android:textColor="#99D5FF"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ig_drop_format_time"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_setting_prayer_down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_format_time_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rl_header_method">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:background="#8793A6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_format_time1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_format_time1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/_24_hour"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_24_hour"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_format_time2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_format_time2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/lato_400"
+                            android:text="@string/_12_hour_am_pm"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <ImageView
+                            android:id="@+id/img_12_hour"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:padding="13dp"
+                            android:src="@drawable/ic_rb_d" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading.json" />
+</androidx.constraintlayout.widget.ConstraintLayout>

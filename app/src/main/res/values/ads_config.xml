@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AF_DEV_KEY" translatable="false">LikYKU2zUYTct7BoQ7MuJY</string>
+
+    <string name="fb_app_id" translatable="false">886852542879936</string>
+
+    <string name="facebook_client_token" translatable="false">96d5606b6edb81eb40ad1e1750dc0439</string>
+
+    <string name="app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="open_resume" translatable="false">ca-app-pub-3940256099942544/9257395921</string>
+</resources>

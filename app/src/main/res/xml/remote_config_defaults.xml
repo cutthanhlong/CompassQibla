@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>open_splash</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>show_inter_intro</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>show_intro</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>show_inter_permission</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>inter_all</key>
+        <value>2</value>
+    </entry>
+
+    <entry>
+        <key>show_inter_all</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>native_language</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>show_language</key>
+        <value>1</value>
+    </entry>
+
+    <entry>
+        <key>native_intro</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>native_permission</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>show_permission</key>
+        <value>1</value>
+    </entry>
+
+    <entry>
+        <key>native_all</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>banner</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>resume</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>show_ump</key>
+        <value>true</value>
+    </entry>
+</defaultsMap>

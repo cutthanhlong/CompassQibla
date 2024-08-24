@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.compass.compassapp.liveweather">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+    <queries>
+        <package android:name="com.google.android.apps.maps" />
+    </queries>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_app"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhoneDialer"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.ActivityOptions"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.PrayerSettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.SettingPrayer"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarWhite">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PermissionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarWhite" />
+        <activity
+            android:name=".activity.IntroScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarIntro" />
+        <activity
+            android:name=".activity.LanguageScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.LanguageStartScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarWhite" />
+        <activity
+            android:name=".activity.AboutScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.PolicyScreenActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.ListCompassDetail"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".util.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+            </intent-filter>
+        </service> <!-- fb -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fb_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoInitEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+            android:value="true" />
+
+        <service android:name=".Service.PrayerService" />
+        <service
+            android:name=".Service.AlarmService"
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
+
+        <receiver
+            android:name=".Service.AlarmBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".Service.SilentModeReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="SILENT_MODE_ACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

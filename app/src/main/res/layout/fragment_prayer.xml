@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cons_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_prayer">
+
+    <RelativeLayout
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato_700"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/prayer_timer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp" />
+
+        <ImageView
+            android:id="@+id/iv_more_p"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/more"
+            android:padding="8dp"
+            android:src="@drawable/ic_more_p" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_no_internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_top">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_no_internet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato_400"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/no_internet"
+            android:textColor="#F3F3F3"
+            android:textSize="@dimen/_11ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_internet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_18sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp">
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_location_p" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_toStartOf="@+id/tv_gmt"
+                android:layout_toEndOf="@+id/iv_location"
+                android:fontFamily="@font/lato_400"
+                android:text="@string/prayer_timer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/tv_gmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato_400"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/gmt"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_next_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_bg_time_d"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato_400"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="Next step"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tv_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato_900"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="04:16:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_c16_p"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/bg_c16_p_top">
+
+                <ImageView
+                    android:id="@+id/iv_left_p"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/left"
+                    android:src="@drawable/ic_left_p"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_right_p"
+                    app:layout_constraintStart_toEndOf="@+id/iv_left_p"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_time_word"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/lato_700"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="30, Jumada al-awwal 1445"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/tv_date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/lato_400"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:singleLine="true"
+                        android:text="Wednesday, December 14, 2023"
+                        android:textColor="#F3F3F3"
+                        android:textSize="@dimen/_8ssp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_right_p"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/right"
+                    android:src="@drawable/ic_right_p"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_prayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="@dimen/_6sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/item_timer" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_120sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="loading.json"
+        app:lottie_loop="true" />
+
+    <LinearLayout
+
+        android:id="@+id/ln_check_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato_700"
+            android:gravity="center"
+            android:text="@string/unable"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/lato_400"
+            android:gravity="center"
+            android:text="@string/try_these"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/lato_400"
+            android:gravity="center"
+            android:text="@string/check_internet"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/lato_400"
+            android:gravity="center"
+            android:text="@string/check_per"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_reload"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/btn_gradient_install"
+            android:fontFamily="@font/lato_400"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="@string/Reload"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

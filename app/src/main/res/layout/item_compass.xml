@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardBackgroundColor="#E9EBEC"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/Standard"
+            android:src="@drawable/stand" />
+
+        <TextView
+            android:id="@+id/tv_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/lato_700"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/Standard"
+            android:textColor="#000000"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

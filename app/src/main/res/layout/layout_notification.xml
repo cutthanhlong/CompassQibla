@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/bg_noti_d">
+    <ImageView
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_prayer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <LinearLayout
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_name_prayer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/lato_700"
+            android:text="@string/fajar_prayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/lato_400"
+            android:text="@string/pray_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

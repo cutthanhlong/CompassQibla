@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_timer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_6sdp"
+    android:background="@color/color_p_sn"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="3dp"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_notification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato_400"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/fajar"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato_400"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/_00_00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_time_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato_400"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/_00_00"
+                android:textColor="#FFEE99"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_notification"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/Notification"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_notification_sn_p"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_setting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="48dp"
+        android:contentDescription="@string/Setting"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_setting_p"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

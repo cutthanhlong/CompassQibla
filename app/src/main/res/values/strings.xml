@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name" translatable="false">Qibla Finder: Qibla Compass</string>
+    <string name="map_key" translatable="false">AIzaSyBIsYW2qUMw_gD9lNcexg6sjMFE_LgfQYI</string>
+    <string name="qibla_angle" translatable="false">Qibla Angle</string>
+    <string name="qibla" translatable="false">Qibla</string>
+    <string name="back" translatable="false">Back</string>
+    <string name="left" translatable="false">Left</string>
+    <string name="right" translatable="false">Right</string>
+    <string name="more" translatable="false">More</string>
+
+
+    <string name="language">Language</string>
+    <string name="about">About</string>
+    <string name="Rate">Rate</string>
+    <string name="Share">Share</string>
+    <string name="north">North</string>
+    <string name="northeast">Northeast</string>
+    <string name="northwest">Northwest</string>
+    <string name="search_menu_title">Search</string>
+    <string name="south">South</string>
+    <string name="southeast">Southeast</string>
+    <string name="southwest">Southwest</string>
+    <string name="east">East</string>
+    <string name="west">West</string>
+    <string name="i_am_here">I am here</string>
+    <string name="this_action">This action may contain advertising.</string>
+    <string name="Send_Email">Send Email</string>
+    <string name="There_is_no">There is no</string>
+    <string name="Thankyou">Thank you</string>
+    <string name="opinion">Your opinion matter to us</string>
+    <string name="you_know">If you enjoy this Qibla Finder: Qibla Compass, would \nyou mind rating us on the Google Play, then?</string>
+    <string name="not_now">Not now</string>
+    <string name="rate_us">Rate us</string>
+    <string name="next">Next</string>
+    <string name="continuee">Continue</string>
+    <string name="version">Version</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="policy">Privacy Policy.</string>
+    <string name="Setting">Setting</string>
+    <string name="permission_allow">Allow permission Compass to work properly.</string>
+    <string name="read_location">Access location</string>
+    <string name="permission">Permission Required</string>
+    <string name="permission_alert">Permission Alert!</string>
+    <string name="some_function">Some functions will not work properly if you do not enable all permission.</string>
+    <string name="wind">Wind</string>
+    <string name="Cloudiness">Cloudiness</string>
+    <string name="Humidity">Humidity</string>
+    <string name="Pressure">Pressure</string>
+    <string name="Visibility">Visibility</string>
+    <string name="uv_index">UV Index</string>
+    <string name="Home">Home</string>
+    <string name="Options">Options</string>
+    <string name="Weather">Weather</string>
+    <string name="Camera">Camera</string>
+    <string name="stand_compass">Standard Compass</string>
+    <string name="digital_compass">Digital Compass</string>
+    <string name="camera_compass">Camera Compass</string>
+    <string name="qibla_compass">Qibla Compass</string>
+    <string name="satellite_compass">Satellite Compasss</string>
+    <string name="map_compass">Map Compass</string>
+    <string name="aviation_compass">Aviation Compass</string>
+    <string name="vintage_compass">Vintage Compass</string>
+    <string name="are_you_exit">Are you sure you want to quit?</string>
+    <string name="Quit">Quit</string>
+    <string name="Stay">Stay</string>
+    <string name="Exit">Exit</string>
+    <string name="live_weather">Live weather</string>
+    <string name="OK">OK</string>
+    <string name="Standard">Standard</string>
+    <string name="Digital">Digital</string>
+    <string name="Qibla">Qibla</string>
+    <string name="Satellite">Satellite</string>
+    <string name="Map">Map</string>
+    <string name="Aviation">Aviation</string>
+    <string name="Vintage">Vintage</string>
+    <string name="Warning">Warning</string>
+
+
+    <string name="your_device">Your device has no magnetometer sensor because of that you cannot use compass and level metter</string>
+    <string name="enable_permission">Enable permissions bellow for Qibla Finder: Qibla Compass to work efficiently.</string>
+    <string name="permission_is_checking">Permission is checking …</string>
+    <string name="permission_check_successful_sufficient_permissions">Permission check successful: sufficient permissions</string>
+    <string name="permission_check_successful_permission_missing">Permission check successful: permission missing</string>
+    <string name="categories">Categories</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="fail_to_search">Fail to search</string>
+    <string name="set_location">Set location</string>
+    <string name="set_your_location_to_determine_exact_qibla_direction">Set your location to determine exact qibla direction</string>
+    <string name="search">Search …</string>
+    <string name="gps" translatable="false">GPS</string>
+    <string name="_00_00" translatable="false">00:00</string>
+    <string name="title1">Qibla Compass</string>
+    <string name="title2">Digital Compass</string>
+    <string name="title3">Live Weather</string>
+    <string name="content1">Prayer-direction tool for Muslims worldwide</string>
+    <string name="content2">Enjoy Your Adventures with Our Support</string>
+    <string name="content3">Plan Your Day with Precision</string>
+    <string name="prayer">Prayer</string>
+    <string name="prayer_timer">Prayer Timer</string>
+    <string name="gmt">GMT</string>
+    <string name="fajar">Fajr</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="dhuhr">Dhuhr</string>
+    <string name="asr">Asr</string>
+    <string name="maghrib">Maghrib</string>
+    <string name="isha">Isha</string>
+    <string name="no_internet">No Internet.</string>
+    <string name="fajar_prayer">prayer time starts!</string>
+    <string name="pray_now">Pray now!!!</string>
+    <string name="pray_in">prayer in</string>
+    <string name="method1">Muslim World League</string>
+    <string name="method2">Egyptian General Authority of Survey</string>
+    <string name="method3">Umm Al-Qura University, Makkah</string>
+    <string name="method4">University of Islamic Sciences, Karachi</string>
+    <string name="method5">Islamic Society of North America</string>
+    <string name="method6">Union Organization islamic de France</string>
+    <string name="method7">Kuwait</string>
+    <string name="Shafi">Shafi</string>
+    <string name="Hanafi">Hanafi</string>
+    <string name="caculation">Calculation Asr time</string>
+    <string name="select_calculation">Select Calculation Method</string>
+    <string name="hiji_date">HiJi date adjustment</string>
+    <string name="format_time">Format time</string>
+    <string name="two_day">Two Days Ago</string>
+    <string name="one_day">One Days Ago</string>
+    <string name="None">None</string>
+    <string name="one_day_ahead">One Days Ahead</string>
+    <string name="two_day_ahead">Two Days Ahead</string>
+    <string name="Slient">Slient</string>
+    <string name="Vibrate">Vibrate</string>
+    <string name="Beep">Beep</string>
+    <string name="Azaan1">Azaan1</string>
+    <string name="Azaan2">Azaan2</string>
+    <string name="Azaan3">Azaan3</string>
+    <string name="alarm_time">Alarm Time</string>
+    <string name="slient_mode">Silent Mode</string>
+    <string name="automatic">Automatically set to silent mode when praying.</string>
+    <string name="prayer_settings">Prayer Settings</string>
+    <string name="silent_mode_true">Silent mode has been activated for 20 minutes</string>
+    <string name="silent_mode_false">Silent mode has been canceled</string>
+    <string name="Notification">Notification</string>
+    <string name="click_to_get_location">Click to get location</string>
+    <string name="location_fail">Sorry, we couldn\'t find your location</string>
+    <string name="enter_your_location">Enter your location</string>
+    <string name="set_your_location_to_find_out_accurate_qibla_compass">Set your location to find out accurate Qibla Compass</string>
+    <string name="please_add_text">Please enter search address</string>
+    <string name="unable">Unable to fetch data</string>
+    <string name="try_these">Try these steps to fetch the information</string>
+    <string name="check_internet">- Check your internet connection</string>
+    <string name="check_per">- Permission</string>
+    <string name="Reload">Reload</string>
+    <string name="select_time">Select time</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="_24_hour">24 Hour</string>
+    <string name="_12_hour_am_pm">12 Hour (am/pm)</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_app" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ig_splash"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_20sdp"
+        android:src="@drawable/logo_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/lato_400"
+        android:letterSpacing="0.04"
+        android:text="@string/app_name"
+        android:textColor="#FCFCFC"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ig_splash" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/lato_400"
+        android:letterSpacing="0.03"
+        android:text="@string/version"
+        android:textColor="#FCFCFC"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <RelativeLayout
+        android:id="@+id/policy"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/version">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/lato_400"
+            android:includeFontPadding="false"
+            android:letterSpacing="0.03"
+            android:text="@string/policy"
+            android:textColor="#66BFFF"
+            android:textSize="@dimen/_20ssp" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_400"
+                android:gravity="center"
+                android:text="@string/permission_allow"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/ic_lang_sn"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tv_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:fontFamily="@font/lato_700"
+                    android:includeFontPadding="false"
+                    android:text="@string/read_location"
+                    android:textColor="#1F3848"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_read"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/read_location"
+                    android:src="@drawable/switch_off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/ic_lang_sn"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:fontFamily="@font/lato_700"
+                    android:includeFontPadding="false"
+                    android:text="@string/Camera"
+                    android:textColor="#1F3848"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/switch_off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_gps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/ic_lang_sn"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tv_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:fontFamily="@font/lato_700"
+                    android:includeFontPadding="false"
+                    android:text="@string/gps"
+                    android:textColor="#1F3848"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_gps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/switch_off" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/ic_lang_sn"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tv_popup_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10ssp"
+                    android:fontFamily="@font/lato_700"
+                    android:includeFontPadding="false"
+                    android:text="@string/Notification"
+                    android:textColor="#1F3848"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/switch_off" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/lato_400"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:minLines="2"
+                android:text="@string/permission_is_checking"
+                android:textColor="@color/color_FFA6A6"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:indeterminate="true"
+        android:indeterminateTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:fontFamily="@font/lato_400"
+        android:includeFontPadding="false"
+        android:text="@string/continuee"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16ssp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

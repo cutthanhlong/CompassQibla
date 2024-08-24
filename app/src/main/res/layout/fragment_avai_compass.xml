@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linLandHill"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_bg_item_left"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/imgLandIc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/ic_item1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_400"
+            android:text="10 m"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linUt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_item_home"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/_12sdp">
+
+        <ImageView
+            android:id="@+id/imgMageticIc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/ic_item2" />
+
+        <TextView
+            android:id="@+id/txtUT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_400"
+            android:text=" 10 µT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relCompassBorder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/lato_700"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp" />
+
+    <RelativeLayout
+        android:id="@+id/relCompassBorder"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/imgCompassNiddle"
+        android:layout_width="296dp"
+        android:layout_height="296dp"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_60sdp" />
+
+</RelativeLayout>

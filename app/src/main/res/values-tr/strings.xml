@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name" translatable="false">Qibla Finder: Qibla Compass</string>
+    <string name="map_key" translatable="false">AIzaSyBIsYW2qUMw_gD9lNcexg6sjMFE_LgfQYI</string>
+    <string name="qibla_angle" translatable="false">Kıble Açısı</string>
+    <string name="qibla" translatable="false">Kıble</string>
+    <string name="back" translatable="false">Geri</string>
+    <string name="left" translatable="false">Sol</string>
+    <string name="right" translatable="false">Sağ</string>
+    <string name="more" translatable="false">Daha</string>
+
+
+    <string name="language">Dil</string>
+    <string name="about">Hakkında</string>
+    <string name="Rate">Oran</string>
+    <string name="Share">Paylaşmak</string>
+    <string name="north">Kuzey</string>
+    <string name="northeast">Kuzeydoğu</string>
+    <string name="northwest">Kuzey Batı</string>
+    <string name="search_menu_title">Aramak</string>
+    <string name="south">Güney</string>
+    <string name="southeast">Güneydoğu</string>
+    <string name="southwest">Güneybatı</string>
+    <string name="east">Doğu</string>
+    <string name="west">Batı</string>
+    <string name="i_am_here">buradayım</string>
+    <string name="this_action">Bu eylem reklam içerebilir.</string>
+    <string name="Send_Email">Eposta gönder</string>
+    <string name="There_is_no">hayır</string>
+    <string name="Thankyou">Teşekkür ederim</string>
+    <string name="opinion">Fikriniz bizim için önemli</string>
+    <string name="you_know">Bu Qibla Finder: Qibla Compass hoşunuza gittiyse nbizi Google Play\'de derecelendirir misiniz?</string>
+    <string name="not_now">Şimdi değil</string>
+    <string name="rate_us">Bizi değerlendirin</string>
+    <string name="next">Sonraki</string>
+    <string name="continuee">Devam etmek</string>
+    <string name="version">Sürüm</string>
+    <string name="cancel">İptal etmek</string>
+    <string name="save">Kaydetmek</string>
+    <string name="policy">Gizlilik Politikası.</string>
+    <string name="Setting">Ayar</string>
+    <string name="permission_allow">Pusula\'nın düzgün çalışmasına izin ver.</string>
+    <string name="read_location">Konum erişimi</string>
+    <string name="permission">İzin Gerekli</string>
+    <string name="permission_alert">İzin Uyarısı!</string>
+    <string name="some_function">Tüm izinleri etkinleştirmezseniz bazı işlevler düzgün çalışmayacaktır.</string>
+    <string name="wind">Rüzgâr</string>
+    <string name="Cloudiness">bulutluluk</string>
+    <string name="Humidity">Nem</string>
+    <string name="Pressure">Basınç</string>
+    <string name="Visibility">Görünürlük</string>
+    <string name="uv_index">UV Endeksi</string>
+    <string name="Home">Ev</string>
+    <string name="Options">Seçenekler</string>
+    <string name="Weather">Hava durumu</string>
+    <string name="Camera">Kamera</string>
+    <string name="stand_compass">Standart Pusula</string>
+    <string name="digital_compass">Dijital pusula</string>
+    <string name="camera_compass">Kamera Pusulası</string>
+    <string name="qibla_compass">Kıble Pusulası</string>
+    <string name="satellite_compass">Uydu Pusulası</string>
+    <string name="map_compass">Harita Pusulası</string>
+    <string name="aviation_compass">Havacılık Pusulası</string>
+    <string name="vintage_compass">Vintage Pusula</string>
+    <string name="are_you_exit">Çıkmak istediğinden emin misin?</string>
+    <string name="Quit">Çıkış yapmak</string>
+    <string name="Stay">Kalmak</string>
+    <string name="Exit">çıkış</string>
+    <string name="live_weather">Canlı hava durumu</string>
+    <string name="OK">TAMAM</string>
+    <string name="Standard">Standart</string>
+    <string name="Digital">Dijital</string>
+    <string name="Qibla">Kıble</string>
+    <string name="Satellite">Uydu</string>
+    <string name="Map">Harita</string>
+    <string name="Aviation">Havacılık</string>
+    <string name="Vintage">Nostaljik</string>
+    <string name="Warning">Uyarı</string>
+
+
+    <string name="your_device">Cihazınızda manyetometre sensörü bulunmadığından pusula ve seviye ölçeri kullanamazsınız.</string>
+    <string name="enable_permission">Verimli bir şekilde çalışmak için Qibla Finder: Qibla Compass için aşağıdaki izinleri etkinleştirin.</string>
+    <string name="permission_is_checking">İzin kontrol ediliyor…</string>
+    <string name="permission_check_successful_sufficient_permissions">İzin kontrolü başarılı: yeterli izinler</string>
+    <string name="permission_check_successful_permission_missing">İzin kontrolü başarılı: izin eksik</string>
+    <string name="categories">Kategoriler</string>
+    <string name="vibrate">Titreşim</string>
+    <string name="fail_to_search">Arama başarısız</string>
+    <string name="set_location">Konumu ayarla</string>
+    <string name="set_your_location_to_determine_exact_qibla_direction">Kesin kıble yönünü belirlemek için konumunuzu ayarlayın</string>
+    <string name="search">Aramak …</string>
+    <string name="gps" translatable="false">Küresel Konumlama Sistemi</string>
+    <string name="_00_00" translatable="false">00:00</string>
+    <string name="title1">Kıble Pusulası</string>
+    <string name="title2">Dijital pusula</string>
+    <string name="title3">Canlı Hava Durumu</string>
+    <string name="content1">Dünya çapındaki Müslümanlar için dua yönlendirme aracı</string>
+    <string name="content2">Desteğimizle Maceralarınızın Tadını Çıkarın</string>
+    <string name="content3">Gününüzü Hassas Bir Şekilde Planlayın</string>
+    <string name="prayer">Namaz</string>
+    <string name="prayer_timer">Namaz Zamanlayıcısı</string>
+    <string name="gmt">GMT</string>
+    <string name="fajar">Sabah</string>
+    <string name="sunrise">gündoğumu</string>
+    <string name="dhuhr">Öğle yemeği</string>
+    <string name="asr">İkindi</string>
+    <string name="maghrib">Akşam</string>
+    <string name="isha">Yatsı</string>
+    <string name="no_internet">İnternet yok.</string>
+    <string name="fajar_prayer">namaz vakti başlıyor!</string>
+    <string name="pray_now">Şimdi dua edin!!!</string>
+    <string name="pray_in">dua etmek</string>
+    <string name="method1">Müslüman Dünya Ligi</string>
+    <string name="method2">Mısır Genel Araştırma Kurumu</string>
+    <string name="method3">Umm Al-Qura Üniversitesi, Mekke</string>
+    <string name="method4">İslami İlimler Üniversitesi, Karaçi</string>
+    <string name="method5">Kuzey Amerika İslam Topluluğu</string>
+    <string name="method6">Birlik Örgütü İslam de France</string>
+    <string name="method7">Kuveyt</string>
+    <string name="Shafi">Şafi</string>
+    <string name="Hanafi">Hanefi</string>
+    <string name="caculation">İkindi vaktinin hesaplanması</string>
+    <string name="select_calculation">Hesaplama Yöntemini Seçin</string>
+    <string name="hiji_date">HiJi tarih ayarı</string>
+    <string name="format_time">Zamanı biçimlendir</string>
+    <string name="two_day">İki gün önce</string>
+    <string name="one_day">Bir Gün Önce</string>
+    <string name="None">Hiçbiri</string>
+    <string name="one_day_ahead">Bir Gün Önümüzdeki</string>
+    <string name="two_day_ahead">İki Gün Önce</string>
+    <string name="Slient">Sessiz</string>
+    <string name="Vibrate">Titreşim</string>
+    <string name="Beep">Bip sesi</string>
+    <string name="Azaan1">Ezan1</string>
+    <string name="Azaan2">Ezan2</string>
+    <string name="Azaan3">Ezan3</string>
+    <string name="alarm_time">Alarm zamanı</string>
+    <string name="slient_mode">Sessiz mod</string>
+    <string name="automatic">Dua ederken otomatik olarak sessiz moda geçer.</string>
+    <string name="prayer_settings">Namaz Ayarları</string>
+    <string name="silent_mode_true">Sessiz mod 20 dakika süreyle etkinleştirildi</string>
+    <string name="silent_mode_false">Sessiz mod iptal edildi</string>
+    <string name="Notification">Bildiri</string>
+    <string name="click_to_get_location">Konum almak için tıklayın</string>
+    <string name="location_fail">Üzgünüz, konumunuzu bulamadık</string>
+    <string name="enter_your_location">Bulunduğunuz yeri girin</string>
+    <string name="set_your_location_to_find_out_accurate_qibla_compass">Doğru Kıble Pusulasını bulmak için konumunuzu ayarlayın</string>
+    <string name="please_add_text">Lütfen arama adresini girin</string>
+    <string name="unable">Veri getirilemiyor</string>
+    <string name="try_these">Bilgileri almak için bu adımları deneyin</string>
+    <string name="check_internet">- İnternet bağlantınızı kontrol edin</string>
+    <string name="check_per">- İzin</string>
+    <string name="Reload">Tekrar yükle</string>
+    <string name="select_time">Zamanı seçin</string>
+    <string name="ringtone">Zil sesi</string>
+    <string name="_24_hour">24 saat</string>
+    <string name="_12_hour_am_pm">12 Saat (öğleden sonra/öğleden sonra)</string>
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app">
+
+    <com.test.compass.customview.NonSwipeableViewPager
+        android:id="@+id/vp_App"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toTopOf="@id/llBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B275B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:src="@drawable/ic_home_select"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/lato_400"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="@string/Home"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgTheme" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clPrayer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgPrayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:src="@drawable/ic_prayer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_prayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:fontFamily="@font/lato_400"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="@string/prayer"
+                    android:textColor="#CED2D6"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgPrayer" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFont"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:src="@drawable/ic_weather"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_Font"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/lato_400"
+
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="@string/Weather"
+                    android:textColor="#CED2D6"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgFont" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSetting"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_4sdp"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imgSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:src="@drawable/ic_setting"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_Setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/lato_400"
+
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="@string/Setting"
+                    android:textColor="#CED2D6"
+                    android:textSize="@dimen/_11ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgSetting" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
